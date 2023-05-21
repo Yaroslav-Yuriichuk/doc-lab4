@@ -1,0 +1,16 @@
+{
+  "InputStrategyConfiguration": {
+    "Type": "EndPoint",
+    "Arguments": [
+      "https://data.sfgov.org",
+      "resource/yitu-d5am.json?$query=SELECT%0A%20%20%60title%60%2C%0A%20%20%60release_year%60%2C%0A%20%20%60locations%60%2C%0A%20%20%60fun_facts%60%2C%0A%20%20%60production_company%60%2C%0A%20%20%60distributor%60%2C%0A%20%20%60director%60%2C%0A%20%20%60writer%60%2C%0A%20%20%60actor_1%60%2C%0A%20%20%60actor_2%60%2C%0A%20%20%60actor_3%60%0AORDER%20BY%20%60title%60%20ASC%20NULL%20LAST"
+    ]
+  },
+  "OutputStrategyConfiguration": {
+    "Type": "Redis",
+    "Arguments": [
+      "localhost:5002",
+      60
+    ]
+  }
+}
